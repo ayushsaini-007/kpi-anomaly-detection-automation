@@ -35,12 +35,14 @@ The chart is only for validation — the final deliverable remains the CSV outpu
 
 ---
 
-## 🗂 Folder Structure  
+## 📂 Folder Structure
 
 KPI-Anomaly-Detection-Automation/  
-│── kpi_anomaly_detection.ipynb  
-│── kpi_anomaly_output.csv  
-│── daily.csv (optional – input dataset)  
+│── data/  
+│   ├── daily.csv  
+│   └── kpi_anomaly_output.csv  
+│── notebooks/  
+│   └── kpi_anomaly_detection.ipynb  
 └── README.md  
 
 ---

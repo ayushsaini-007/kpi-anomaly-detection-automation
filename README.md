@@ -1,67 +1,62 @@
 # 📊 KPI Anomaly Detection Automation
 
-This project focuses on monitoring daily business KPIs and identifying unusual spikes or drops using statistical anomaly detection.  
-The goal is to detect abnormal behaviour early and provide a clean output that can be used for dashboards and alerting workflows.
+This project focuses on monitoring daily business KPIs and identifying unusual spikes or drops using statistical anomaly detection. 
+The goal is to generate a clean, business-ready output that can be used in dashboards or alerting workflows.
 
 ---
 
 ## 📌 What This Project Covers
 
-- Loaded and prepared KPI dataset in Jupyter Notebook (Python)
+- Loaded and prepared the KPI dataset in Jupyter Notebook (Python)
 - Cleaned and formatted date and KPI fields
-- Applied statistical logic (z-score based thresholding) to flag anomalies
+- Applied statistical logic to flag anomalies
 - Generated anomaly indicators for days with unusual KPI behaviour
-- Added a simple line chart to visually validate anomaly points
-- Exported a business-ready CSV containing final anomaly results
+- Created a simple KPI trend chart for validation
+- Exported a final CSV file containing the anomaly results
 
 **Tools used:** Python, Pandas, NumPy, Matplotlib, Jupyter Notebook
 
 ---
 
-## 📂 Folder Structure  
-KPI-Anomaly-Detection-Automation/    
+## 📊 Key Insights
+
+- The dataset includes multiple daily KPI records, out of which **7 days were flagged as anomalies**
+- Anomalies align with unusual fluctuations in KPI values and may indicate operational or business-level deviations
+- These anomaly points help stakeholders investigate potential issues earlier instead of reacting late
+
+---
+
+## 📈 Visual Highlights
+
+- **Revenue trend chart with highlighted anomaly points**  
+  Used to visually validate whether the detection logic matches real KPI behaviour
+
+The chart is only for validation — the final deliverable remains the CSV output.
+
+---
+
+## 🗂 Folder Structure  
+
+KPI-Anomaly-Detection-Automation/  
 │── kpi_anomaly_detection.ipynb  
 │── kpi_anomaly_output.csv  
 │── daily.csv (optional – input dataset)  
-│── README.md  
+└── README.md  
 
 ---
 
-## 🧠 Business Insight
-
-Anomalies indicate days where KPI trends deviate significantly from normal patterns.  
-These may point to:
-- sudden performance drops  
-- unexpected revenue spikes  
-- operational irregularities  
-- potential system or data issues  
-
-Such points help stakeholders **investigate and act early** rather than reacting late.
-
----
-
-## 📈 Visual Validation
-
-The notebook includes a minimal validation chart:
-
-- Line chart showing KPI trend over time  
-- Highlighted points representing anomaly days  
-
-The chart is used only to **verify detection logic** —  
-the final deliverable remains the **CSV output** for downstream consumption.
-
----
-
-## 🗂 Output File
+## 🗃 Output File
 
 The project generates:
 kpi_anomaly_output.csv
+
+
 This file contains:
 - Date  
 - KPI values  
-- Anomaly flag (0 = normal, 1 = anomaly)  
+- Anomaly flag (0 = normal, 1 = anomaly)
 
-It is designed for use in dashboards, automation workflows, or monitoring pipelines.
+Designed for monitoring dashboards and automation workflows.
 
 ---
 
@@ -69,8 +64,8 @@ It is designed for use in dashboards, automation workflows, or monitoring pipeli
 
 1. Open `kpi_anomaly_detection.ipynb` in Jupyter Notebook  
 2. Run all cells in sequence  
-3. Review anomaly chart for validation  
-4. The final output file (`kpi_anomaly_output.csv`) will be generated
+3. Review the anomaly validation chart  
+4. The final output file (`kpi_anomaly_output.csv`) will be generated in the project directory
 
 ---
 

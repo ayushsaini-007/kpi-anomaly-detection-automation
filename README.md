@@ -55,7 +55,6 @@ the final deliverable remains the **CSV output** for downstream consumption.
 ## 🗂 Output File
 
 The project generates:
-
 kpi_anomaly_output.csv
 This file contains:
 - Date  
